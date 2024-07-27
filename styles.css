@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d0f4d2;
+    color: rgb(65, 97, 78);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.25rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button, #add-shelf-button {
+    background-color: #3f4e3f;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover, #add-shelf-button:hover {
+    background-color: #b3d5a5;
+}
+
+#book-form {
+    margin-bottom: 2rem;
+}
+
+#book-shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.shelf {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    background-color: #f5e3ca;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.book {
+    width: 60px;
+    height: 100px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+    max-width: 60px;
+    max-height: 100px;
+    border-radius: 5px;
+}
+
+img {
+    height: 95%;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .shelf {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .book {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
